@@ -1,6 +1,0 @@
-framework module Pods_CocTale {
-  umbrella header "Pods-CocTale-umbrella.h"
-
-  export *
-  module * { export * }
-}
