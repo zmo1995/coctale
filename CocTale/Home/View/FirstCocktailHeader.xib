@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="firstHeader" id="U6b-Vx-4bR" customClass="FirstCocktailHeader" customModule="CocTale" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GU9-vu-liP">
+                    <rect key="frame" x="20" y="40" width="163" height="48"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sK-wv-WVj">
+                    <rect key="frame" x="20" y="135.5" width="72.5" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LfR-lv-0nN">
+                    <rect key="frame" x="20" y="162" width="371" height="3"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="UK5-Se-oMD"/>
+                        <constraint firstAttribute="width" constant="371" id="hlT-dw-bqa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="LfR-lv-0nN" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="H7Y-HI-mzo"/>
+                <constraint firstItem="GU9-vu-liP" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="40" id="KkK-yu-sdm"/>
+                <constraint firstItem="6sK-wv-WVj" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" constant="-3" id="QMU-j9-eEw"/>
+                <constraint firstItem="LfR-lv-0nN" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="RIm-Qx-JQM"/>
+                <constraint firstItem="GU9-vu-liP" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="eve-XF-ZCh"/>
+                <constraint firstItem="6sK-wv-WVj" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="use-RN-yXp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="largeTitleLabel" destination="GU9-vu-liP" id="8AM-ze-nWK"/>
+                <outlet property="sectionTitleLabel" destination="6sK-wv-WVj" id="QCH-LV-4Qj"/>
+            </connections>
+            <point key="canvasLocation" x="-84.057971014492765" y="41.852678571428569"/>
+        </collectionReusableView>
+    </objects>
+</document>

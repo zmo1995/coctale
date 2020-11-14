@@ -3,27 +3,77 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3EADDCFF2508369600C72A16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDCFE2508369600C72A16 /* AppDelegate.swift */; };
 		3EADDD012508369600C72A16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD002508369600C72A16 /* SceneDelegate.swift */; };
-		3EADDD032508369600C72A16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD022508369600C72A16 /* ViewController.swift */; };
+		3EADDD032508369600C72A16 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD022508369600C72A16 /* MainViewController.swift */; };
 		3EADDD062508369600C72A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EADDD042508369600C72A16 /* Main.storyboard */; };
 		3EADDD082508369900C72A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EADDD072508369900C72A16 /* Assets.xcassets */; };
 		3EADDD0B2508369900C72A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EADDD092508369900C72A16 /* LaunchScreen.storyboard */; };
+		3EADDD17250917ED00C72A16 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD16250917ED00C72A16 /* UIImageViewExtension.swift */; };
+		3EADDD1B250918DE00C72A16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD1A250918DE00C72A16 /* HomeViewController.swift */; };
+		3EADDD1D25091CD100C72A16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD1C25091CD100C72A16 /* Constants.swift */; };
+		3EADDD2325091FEA00C72A16 /* cocktailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD2125091FEA00C72A16 /* cocktailCell.swift */; };
+		3EADDD2425091FEA00C72A16 /* cocktailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EADDD2225091FEA00C72A16 /* cocktailCell.xib */; };
+		3EADDD262509747100C72A16 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD252509747100C72A16 /* UIColorExtension.swift */; };
+		3EADDD2B2509788100C72A16 /* cocktailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD2A2509788100C72A16 /* cocktailModel.swift */; };
+		3EADDD2F25097C8700C72A16 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD2E25097C8700C72A16 /* Secret.swift */; };
+		3EADDD3325097EAF00C72A16 /* homeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD3225097EAF00C72A16 /* homeViewModel.swift */; };
+		3EADDD362509812800C72A16 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD352509812800C72A16 /* NetworkTools.swift */; };
+		3EADDD3B250A8B1300C72A16 /* FirstCocktailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD39250A8B1300C72A16 /* FirstCocktailHeader.swift */; };
+		3EADDD3C250A8B1300C72A16 /* FirstCocktailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EADDD3A250A8B1300C72A16 /* FirstCocktailHeader.xib */; };
+		3EADDD482513E40800C72A16 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD462513E40800C72A16 /* DetailViewController.swift */; };
+		3EADDD4C2513EE5C00C72A16 /* DetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD4A2513EE5C00C72A16 /* DetailHeader.swift */; };
+		3EADDD4D2513EE5C00C72A16 /* DetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EADDD4B2513EE5C00C72A16 /* DetailHeader.xib */; };
+		3EADDD522513FA3500C72A16 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD502513FA3500C72A16 /* DescriptionCell.swift */; };
+		3EADDD532513FA3500C72A16 /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EADDD512513FA3500C72A16 /* DescriptionCell.xib */; };
+		3EADDD562516877F00C72A16 /* TitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD542516877F00C72A16 /* TitleHeader.swift */; };
+		3EADDD572516877F00C72A16 /* TitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EADDD552516877F00C72A16 /* TitleHeader.xib */; };
+		3EADDD842527B14A00C72A16 /* IngredientTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD822527B14A00C72A16 /* IngredientTable.swift */; };
+		3EADDD852527B14A00C72A16 /* IngredientTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EADDD832527B14A00C72A16 /* IngredientTable.xib */; };
+		3EADDD87252CE16900C72A16 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD86252CE16900C72A16 /* Functions.swift */; };
+		3EADDD8E25325EA100C72A16 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EADDD8D25325EA100C72A16 /* RecipeViewController.swift */; };
+		EF573262D2D2CB87C9A7509B /* Pods_CocTale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE359D97E21263BFD9BB6B74 /* Pods_CocTale.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28902D9DE99E1E6B0077CC13 /* Pods-CocTale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocTale.debug.xcconfig"; path = "Target Support Files/Pods-CocTale/Pods-CocTale.debug.xcconfig"; sourceTree = "<group>"; };
 		3EADDCFB2508369600C72A16 /* CocTale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocTale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EADDCFE2508369600C72A16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EADDD002508369600C72A16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3EADDD022508369600C72A16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EADDD022508369600C72A16 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3EADDD052508369600C72A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EADDD072508369900C72A16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EADDD0A2508369900C72A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EADDD0C2508369900C72A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EADDD16250917ED00C72A16 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		3EADDD1A250918DE00C72A16 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3EADDD1C25091CD100C72A16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3EADDD2125091FEA00C72A16 /* cocktailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocktailCell.swift; sourceTree = "<group>"; };
+		3EADDD2225091FEA00C72A16 /* cocktailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cocktailCell.xib; sourceTree = "<group>"; };
+		3EADDD252509747100C72A16 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		3EADDD2A2509788100C72A16 /* cocktailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocktailModel.swift; sourceTree = "<group>"; };
+		3EADDD2E25097C8700C72A16 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		3EADDD3225097EAF00C72A16 /* homeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewModel.swift; sourceTree = "<group>"; };
+		3EADDD352509812800C72A16 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		3EADDD39250A8B1300C72A16 /* FirstCocktailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCocktailHeader.swift; sourceTree = "<group>"; };
+		3EADDD3A250A8B1300C72A16 /* FirstCocktailHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCocktailHeader.xib; sourceTree = "<group>"; };
+		3EADDD462513E40800C72A16 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3EADDD4A2513EE5C00C72A16 /* DetailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeader.swift; sourceTree = "<group>"; };
+		3EADDD4B2513EE5C00C72A16 /* DetailHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeader.xib; sourceTree = "<group>"; };
+		3EADDD502513FA3500C72A16 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		3EADDD512513FA3500C72A16 /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
+		3EADDD542516877F00C72A16 /* TitleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeader.swift; sourceTree = "<group>"; };
+		3EADDD552516877F00C72A16 /* TitleHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleHeader.xib; sourceTree = "<group>"; };
+		3EADDD822527B14A00C72A16 /* IngredientTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientTable.swift; sourceTree = "<group>"; };
+		3EADDD832527B14A00C72A16 /* IngredientTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientTable.xib; sourceTree = "<group>"; };
+		3EADDD86252CE16900C72A16 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		3EADDD8D25325EA100C72A16 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		63B33E95A904BF1623595ACC /* Pods-CocTale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocTale.release.xcconfig"; path = "Target Support Files/Pods-CocTale/Pods-CocTale.release.xcconfig"; sourceTree = "<group>"; };
+		FE359D97E21263BFD9BB6B74 /* Pods_CocTale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocTale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF573262D2D2CB87C9A7509B /* Pods_CocTale.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +93,8 @@
 			children = (
 				3EADDCFD2508369600C72A16 /* CocTale */,
 				3EADDCFC2508369600C72A16 /* Products */,
+				64CAB8345E21733F813C41EC /* Pods */,
+				587D0798C00F986D7DCAE544 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +109,223 @@
 		3EADDCFD2508369600C72A16 /* CocTale */ = {
 			isa = PBXGroup;
 			children = (
+				3EADDD8825325A9B00C72A16 /* Recipe */,
+				3EADDD3D25127F7600C72A16 /* Detail */,
+				3EADDD18250918B200C72A16 /* Home */,
+				3EADDD15250837EB00C72A16 /* Search */,
+				3EADDD13250837D100C72A16 /* Main */,
+				3EADDD12250837C600C72A16 /* Tools */,
 				3EADDCFE2508369600C72A16 /* AppDelegate.swift */,
 				3EADDD002508369600C72A16 /* SceneDelegate.swift */,
-				3EADDD022508369600C72A16 /* ViewController.swift */,
 				3EADDD042508369600C72A16 /* Main.storyboard */,
 				3EADDD072508369900C72A16 /* Assets.xcassets */,
 				3EADDD092508369900C72A16 /* LaunchScreen.storyboard */,
 				3EADDD0C2508369900C72A16 /* Info.plist */,
 			);
 			path = CocTale;
+			sourceTree = "<group>";
+		};
+		3EADDD12250837C600C72A16 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD3425097F1C00C72A16 /* NetworkTools */,
+				3EADDD16250917ED00C72A16 /* UIImageViewExtension.swift */,
+				3EADDD1C25091CD100C72A16 /* Constants.swift */,
+				3EADDD252509747100C72A16 /* UIColorExtension.swift */,
+				3EADDD2E25097C8700C72A16 /* Secret.swift */,
+				3EADDD86252CE16900C72A16 /* Functions.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3EADDD13250837D100C72A16 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD292509782200C72A16 /* Controller */,
+				3EADDD282509781E00C72A16 /* View */,
+				3EADDD272509781600C72A16 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3EADDD15250837EB00C72A16 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		3EADDD18250918B200C72A16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD3025097E7C00C72A16 /* ViewModel */,
+				3EADDD2025091F8200C72A16 /* Controller */,
+				3EADDD1F25091F7800C72A16 /* View */,
+				3EADDD1E25091F7000C72A16 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3EADDD1E25091F7000C72A16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EADDD1F25091F7800C72A16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD2125091FEA00C72A16 /* cocktailCell.swift */,
+				3EADDD2225091FEA00C72A16 /* cocktailCell.xib */,
+				3EADDD39250A8B1300C72A16 /* FirstCocktailHeader.swift */,
+				3EADDD3A250A8B1300C72A16 /* FirstCocktailHeader.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EADDD2025091F8200C72A16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD1A250918DE00C72A16 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EADDD272509781600C72A16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD2A2509788100C72A16 /* cocktailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EADDD282509781E00C72A16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EADDD292509782200C72A16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD022508369600C72A16 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EADDD3025097E7C00C72A16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD3225097EAF00C72A16 /* homeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3EADDD3425097F1C00C72A16 /* NetworkTools */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD352509812800C72A16 /* NetworkTools.swift */,
+			);
+			path = NetworkTools;
+			sourceTree = "<group>";
+		};
+		3EADDD3D25127F7600C72A16 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD4025127FB000C72A16 /* Model */,
+				3EADDD3F25127F9000C72A16 /* Controller */,
+				3EADDD3E25127F8100C72A16 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3EADDD3E25127F8100C72A16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD4A2513EE5C00C72A16 /* DetailHeader.swift */,
+				3EADDD4B2513EE5C00C72A16 /* DetailHeader.xib */,
+				3EADDD502513FA3500C72A16 /* DescriptionCell.swift */,
+				3EADDD512513FA3500C72A16 /* DescriptionCell.xib */,
+				3EADDD542516877F00C72A16 /* TitleHeader.swift */,
+				3EADDD552516877F00C72A16 /* TitleHeader.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EADDD3F25127F9000C72A16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD462513E40800C72A16 /* DetailViewController.swift */,
+				3EADDD822527B14A00C72A16 /* IngredientTable.swift */,
+				3EADDD832527B14A00C72A16 /* IngredientTable.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EADDD4025127FB000C72A16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EADDD8825325A9B00C72A16 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD8C25325AEE00C72A16 /* ViewModel */,
+				3EADDD8B25325AE600C72A16 /* Controller */,
+				3EADDD8A25325AE100C72A16 /* View */,
+				3EADDD8925325AD900C72A16 /* Model */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		3EADDD8925325AD900C72A16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EADDD8A25325AE100C72A16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EADDD8B25325AE600C72A16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EADDD8D25325EA100C72A16 /* RecipeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EADDD8C25325AEE00C72A16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		587D0798C00F986D7DCAE544 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE359D97E21263BFD9BB6B74 /* Pods_CocTale.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64CAB8345E21733F813C41EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28902D9DE99E1E6B0077CC13 /* Pods-CocTale.debug.xcconfig */,
+				63B33E95A904BF1623595ACC /* Pods-CocTale.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EADDD0F2508369900C72A16 /* Build configuration list for PBXNativeTarget "CocTale" */;
 			buildPhases = (
+				B7407ADB93C0DE36BA97E61A /* [CP] Check Pods Manifest.lock */,
 				3EADDCF72508369600C72A16 /* Sources */,
 				3EADDCF82508369600C72A16 /* Frameworks */,
 				3EADDCF92508369600C72A16 /* Resources */,
+				2B79D16A8B4B7B6743C62510 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +388,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EADDD532513FA3500C72A16 /* DescriptionCell.xib in Resources */,
 				3EADDD0B2508369900C72A16 /* LaunchScreen.storyboard in Resources */,
+				3EADDD3C250A8B1300C72A16 /* FirstCocktailHeader.xib in Resources */,
+				3EADDD572516877F00C72A16 /* TitleHeader.xib in Resources */,
 				3EADDD082508369900C72A16 /* Assets.xcassets in Resources */,
+				3EADDD4D2513EE5C00C72A16 /* DetailHeader.xib in Resources */,
 				3EADDD062508369600C72A16 /* Main.storyboard in Resources */,
+				3EADDD852527B14A00C72A16 /* IngredientTable.xib in Resources */,
+				3EADDD2425091FEA00C72A16 /* cocktailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B79D16A8B4B7B6743C62510 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocTale/Pods-CocTale-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CocTale/Pods-CocTale-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CocTale/Pods-CocTale-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7407ADB93C0DE36BA97E61A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocTale-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3EADDCF72508369600C72A16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EADDD032508369600C72A16 /* ViewController.swift in Sources */,
+				3EADDD1B250918DE00C72A16 /* HomeViewController.swift in Sources */,
+				3EADDD3B250A8B1300C72A16 /* FirstCocktailHeader.swift in Sources */,
+				3EADDD8E25325EA100C72A16 /* RecipeViewController.swift in Sources */,
+				3EADDD522513FA3500C72A16 /* DescriptionCell.swift in Sources */,
+				3EADDD87252CE16900C72A16 /* Functions.swift in Sources */,
+				3EADDD032508369600C72A16 /* MainViewController.swift in Sources */,
 				3EADDCFF2508369600C72A16 /* AppDelegate.swift in Sources */,
+				3EADDD262509747100C72A16 /* UIColorExtension.swift in Sources */,
+				3EADDD2F25097C8700C72A16 /* Secret.swift in Sources */,
+				3EADDD17250917ED00C72A16 /* UIImageViewExtension.swift in Sources */,
 				3EADDD012508369600C72A16 /* SceneDelegate.swift in Sources */,
+				3EADDD2B2509788100C72A16 /* cocktailModel.swift in Sources */,
+				3EADDD4C2513EE5C00C72A16 /* DetailHeader.swift in Sources */,
+				3EADDD2325091FEA00C72A16 /* cocktailCell.swift in Sources */,
+				3EADDD562516877F00C72A16 /* TitleHeader.swift in Sources */,
+				3EADDD1D25091CD100C72A16 /* Constants.swift in Sources */,
+				3EADDD842527B14A00C72A16 /* IngredientTable.swift in Sources */,
+				3EADDD482513E40800C72A16 /* DetailViewController.swift in Sources */,
+				3EADDD362509812800C72A16 /* NetworkTools.swift in Sources */,
+				3EADDD3325097EAF00C72A16 /* homeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +610,7 @@
 		};
 		3EADDD102508369900C72A16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28902D9DE99E1E6B0077CC13 /* Pods-CocTale.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +629,7 @@
 		};
 		3EADDD112508369900C72A16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B33E95A904BF1623595ACC /* Pods-CocTale.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

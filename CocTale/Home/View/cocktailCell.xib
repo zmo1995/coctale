@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="cocktailCell" customModule="CocTale" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="335"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="335"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview" translatesAutoresizingMaskIntoConstraints="NO" id="Fpc-fI-E22">
+                        <rect key="frame" x="83" y="10" width="180" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180" id="D0a-eh-kbE"/>
+                            <constraint firstAttribute="width" constant="180" id="ucM-bw-jdF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smashed Watermelon Margarita" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sA-8i-2cZ">
+                        <rect key="frame" x="83" y="210" width="180" height="38.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="0zV-js-WCJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Fpc-fI-E22" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="1s1-EZ-JOV"/>
+                <constraint firstItem="4sA-8i-2cZ" firstAttribute="top" secondItem="Fpc-fI-E22" secondAttribute="bottom" constant="20" id="CBm-tv-CJa"/>
+                <constraint firstItem="4sA-8i-2cZ" firstAttribute="centerX" secondItem="Fpc-fI-E22" secondAttribute="centerX" id="gfu-Vf-QXE"/>
+                <constraint firstItem="Fpc-fI-E22" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="s4Q-zg-dTl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="346" height="335"/>
+            <connections>
+                <outlet property="cocktailImage" destination="Fpc-fI-E22" id="4NB-TF-qYE"/>
+                <outlet property="cocktailNameLabel" destination="4sA-8i-2cZ" id="ZLW-bm-RWR"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="185.15625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="preview" width="150" height="150"/>
+    </resources>
+</document>
